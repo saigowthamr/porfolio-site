@@ -1,0 +1,128 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.about{
+
+     background-color:#26273A;
+     height: 100%;
+     color: rgb(255, 255, 255);
+     padding: 3rem;
+     line-height: 2;
+   text-transform: capitalize;
+    user-select: none;
+box-shadow: inset 2px -6rem 19rem 20px #1b1616;
+
+}
+
+
+
+
+.about-start{
+    margin-top: 6rem;
+   width: 60%;
+   margin-left: 20%;
+   margin-right: 20%;
+
+}
+
+.abth1{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: goldenrod;
+    font-size: 2.2rem;
+
+}
+
+.abtbody{
+    font-size: 1.5rem;
+   border: 2px dashed gold ;
+   padding: 2rem;
+   word-spacing: .2rem;
+   box-shadow: 0 1rem 1rem black;
+
+}
+
+.social{
+    margin-top: 4rem;
+}
+
+.social-start{
+    display: flex;
+    list-style: none;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.icon:first-child::before{
+    font-family: FontAwesome;
+    content: "\f23a";
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+
+
+.icon:nth-child(2)::before {
+    font-family: FontAwesome;
+    content: "\f099";
+    font-size: 2rem;
+    color: #009CFA;
+
+}
+.icon:nth-child(3)::before {
+    font-family: FontAwesome;
+    content: "\f09b";
+    font-size: 2rem;
+
+}
+
+
+
+.icon:nth-child(4)::before {
+    font-family: FontAwesome;
+    content : "\f003";
+    font-size: 2rem;
+    transition: all .3s;
+   position: relative;
+   color:#E43C29;
+
+}
+
+
+
+
+.icon:focus{
+    outline-color: red;
+    border: 1px solid;
+}
+
+.icon:not(:first-child){
+         margin-left: 2rem;
+   }
+
+.icon{
+    cursor: pointer;
+    transition: all .3s;
+
+}
+
+
+
+@media screen and (max-width:700px) {
+    .about {
+        padding: 1rem;
+    }
+    .about-start {
+        margin-top: 4rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .abtbody {
+        font-size: 1.6rem;
+        border: 1px dashed gold;
+        padding: 1rem;
+        word-spacing: none;
+        box-shadow: 0 1rem 1rem black;
+    }
+}

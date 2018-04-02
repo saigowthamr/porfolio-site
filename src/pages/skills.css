@@ -1,0 +1,150 @@
+.main{
+    text-align: center;
+    width: 100%;
+background-color:    #252839;
+height: 100%;
+    padding: 3rem;
+
+}
+.start{
+
+   margin-top: 20%;
+   padding: 3rem;
+
+}
+.row-1{
+    display: flex;
+    justify-content: center;
+}
+
+.row-2{
+    display: flex;
+    justify-content:center;
+}
+
+.row-1 ul{
+   display: flex;
+   list-style: none;
+   /* flex-wrap: wrap; */
+   font-size: 1.5rem;
+
+}
+
+.li-1{
+       margin-left: 1rem;
+       background-color: #f2b632;
+       color: #000000;
+       padding: 1rem;
+       margin-bottom: 1rem;
+       border-radius: 10px;
+       border: 1px dashed black;
+       box-shadow: 0 1rem 1rem rgb(0, 0, 0);
+       letter-spacing: .2rem;
+       cursor: pointer;
+       transition:all .3s cubic-bezier(1, 0, 0, 1);
+       font-weight: 500;
+}
+
+.li-1:hover{
+    transform: scale(1.1);
+}
+
+.li-1:hover +.li-1 {
+    opacity: .5;
+}
+
+.li-1:hover ~.li-1{
+  opacity: .5;
+}
+
+.li--1{
+    background-color: #F43B00;
+    color: #FFFFFF;
+}
+
+.li--2{
+    background-color: #006EC0;
+    color: #FFFFFF;
+}
+
+.li--3{
+    background-color: #FAE100;
+    color: #2E2E2C;
+}
+
+.li--4{
+    background-color: #2A2C2E;
+    color: #25DBFF;
+}
+.li--5 {
+    background-color: #D30018;
+    color: #FFFFFF;
+}
+
+.li--6{
+    background-color: #00BF81;
+}
+
+.li--7{
+    background-color: #5BA75A;
+    color: #fff;
+}
+
+.li--8{
+    background-color: #FF9700;
+}
+
+.li--9{
+    background-color: #0097EC;
+    color: #fff;
+}
+.li--10{
+    background-color: #31B645;
+    color: #fff;
+}
+
+.li--11{
+    background-color: #16151E;
+    color: #fff;
+}
+.row-2 ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:700px){
+.main {
+
+    width: 100%;
+    background-color: #252839;
+    height: 100%;
+    padding: 1rem;
+}
+.row-1 {
+    display: flex;
+    justify-content: flex-start;
+
+}
+.row-2  {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.row-1 ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+}
+.li-1 {
+
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px dashed black;
+    letter-spacing: .1rem;
+    font-weight:400;
+}
+}

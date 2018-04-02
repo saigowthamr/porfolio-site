@@ -1,0 +1,98 @@
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-gap: 3rem;
+  background-color: #26273A;
+  width: 100%;
+ height: fit-content;
+ padding: 4rem;
+ padding-top: 7rem;
+     padding-bottom: 8.3rem;
+}
+
+
+
+.item {
+background-color: antiquewhite;
+padding: 2rem;
+height: 28rem;
+background-position: top;
+background-size: cover;
+position: relative;
+margin-bottom: 3rem;
+
+border: 3px solid gold;
+}
+
+.heading {
+   background-color: #1b1616;
+   width: auto;
+   height: 20%;
+   text-align: center;
+   color: rgb(255, 255, 255);
+   margin: -2rem -2rem 1rem -2rem;
+   border-top-left-radius: 0.2rem;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+.item:first-child {
+  background-image: url('../../public/wet1.png');
+  z-index: 2;
+}
+
+.item:nth-child(2) {
+  background-image: url('../../public/roll1.png');
+}
+
+.item:nth-child(3) {
+  background-image: url('../../public/ytube1.png');
+}
+
+.item:nth-child(4) {
+  background-image: url('../../public/grid5.png');
+  background-position: center;
+}
+
+.item:nth-child(5) {
+  background-image: url('../../public/reactauth1.png');
+  background-position: center;
+}
+
+.contentlinks {
+  height: 5rem;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #2f3542;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 100;
+
+}
+.heading-span{
+
+  color: rgb(72, 233, 40);
+  font-weight: 100;
+}
+.a-port {
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+
+.dis{
+  cursor: not-allowed;
+}

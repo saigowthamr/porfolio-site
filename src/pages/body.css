@@ -1,0 +1,119 @@
+.back{
+background-image: linear-gradient(
+  rgba(7, 7, 7, 0.178),
+  rgba(238, 191, 191, 0.24)),
+url('../../public/con1.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.containers {
+     margin: 5rem 0 1rem 3rem;
+     padding: 2rem;
+     color: #2f3542;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     list-style: none;
+     font-size: 3rem;
+     -ms-flex-align: center;
+     align-items: center;
+     overflow: hidden;
+}
+
+.bodyitem {
+
+      width: 50%;
+      background-color: #191616;
+      margin-top: 2rem;
+      padding: 3rem;
+      text-align: center;
+      text-shadow: 1px 1px 1px #696969;
+      -ms-transform-origin: 0%;
+      transform-origin: 0%;
+      font-family: cursive;
+      color: gold;
+      border: 1px solid;
+}
+
+.bodyitem:first-child {
+  margin-top: 0;
+  box-shadow: 0 1px 10px black;
+}
+
+.bodyitem:nth-child(2n) {
+  box-shadow: 0 3px 10px black;
+}
+
+.bodyitem:nth-child(3) {
+  box-shadow: 0 5px 10px black;
+}
+
+.bodyitem:nth-child(4) {
+  animation: myown 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  box-shadow: 0 7px 10px black;
+}
+
+.bodyitem:nth-child(5) {
+  animation-delay: 1s;
+  animation: myown 3s;
+  font-size: 1.7rem;
+  box-shadow: 0 10px 10px black;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  letter-spacing: .2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .bodyitem {
+    text-align: justify;
+    margin-top: 1rem;
+
+    width: 100%;
+  }
+  .containers {
+    margin: 1rem 0 1rem 3rem;
+  }
+}
+
+@keyframes myown {
+  0% {
+    opacity: 0;
+    transform: translateY(100rem);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+@media screen and (max-width:70rem){
+
+  .back {
+
+
+    padding: 1rem;
+    margin-top: auto;
+  }
+  .containers {
+
+    font-size: 2rem;
+
+  }
+.bodyitem {
+  width: 80%;
+  margin-top: 5rem;
+  padding: 1rem;
+  text-align: center;
+}
+}
